@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "chadi-meteor",
+  "version": "${version}",
+  "name": "chadis meteor addon",
+  "description": "meteor addon for stuff i want",
+  "authors": [
+    "chaadi"
+  ],
+  "contact": {
+    "repo": "https://github.com/MeteorDevelopment/meteor-addon-template"
+  },
+  "icon": "assets/chadi/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "com.chadi.addon.ChadiMeteorAddon"
+    ]
+  },
+  "mixins": [
+    "chadi-addon.mixins.json"
+  ],
+  "custom": {
+    "meteor-client:color": "225,25,25"
+  },
+  "depends": {
+    "java": ">=17",
+    "minecraft": ">=${mc_version}",
+    "meteor-client": "*"
+  }
+}
